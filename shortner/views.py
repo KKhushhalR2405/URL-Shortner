@@ -16,7 +16,10 @@ def create(request):
         return HttpResponse(uid)
 
 def go(request, pk):
+    
+
     url_details = Url.objects.get(uuid=pk)
     # print(url_details.link)
     return redirect(url_details.link)
+    
 
