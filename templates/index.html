@@ -34,8 +34,9 @@
             </div><br>
             <div style="margin-left: 140px;"><button type="submit" class="btn btn-primary">Submit</button></div>
         </form>
+        <br><br>
         <section id="section">
-            <h2></h2>
+            <p style="margin-left: 110px;"></p>
         </section>
     </div>
 
@@ -73,7 +74,7 @@
           csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
         },
         success: function(data){
-          $('h2').html("localhost:8000/"+data)
+          $('p').html("localhost:8000/"+data)
         }
       });
     });
